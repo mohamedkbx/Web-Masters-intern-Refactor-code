@@ -1,10 +1,25 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+/* CSS Variables */
+:root {
+  --color-primary: #007bff;
+  --color-hover: #0056b3;
+  --color-secondary: #f4f4f9;
+  --color-text: #666;
+  --background-color: #ffffff;
+  --color-footer-bg: #343a40;
+  --color-white: white;
+  --font-family: Arial, sans-serif;
 }
+
+/* Global Styles */
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-secondary);
+}
+
+/* Header Styles */
 .header {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--color-primary);
+  color: var(--color-white);
   padding: 40px 0;
   text-align: center;
   position: relative;
@@ -17,15 +32,16 @@ body {
   transform: translateX(-50%);
   width: 100px;
   height: 5px;
-  background-color: white;
+  background-color: var(--color-white);
 }
+
 .nav-links {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 .nav-links a {
-  color: white;
+  color: var(--color-white);
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
@@ -33,11 +49,13 @@ body {
 .nav-links a:hover {
   text-decoration: underline;
 }
+
+/* Post Styles */
 .post {
   border: 1px solid #ddd;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: white;
+  background-color: var(--background-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -50,18 +68,21 @@ body {
   margin-bottom: 15px;
 }
 .post p {
-  color: #666;
+  color: var(--color-text);
   line-height: 1.6;
 }
 .post .btn-primary {
-  background-color: #007bff;
+  background-color: var(--color-primary);
   border: none;
+  color: var(--color-white);
 }
 .post .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: var(--color-hover);
 }
+
+/* Sidebar Styles */
 .sidebar {
-  background-color: #f8f9fa;
+  background-color: var(--color-secondary);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -79,15 +100,17 @@ body {
   margin-bottom: 10px;
 }
 .sidebar ul li a {
-  color: #007bff;
+  color: var(--color-primary);
   text-decoration: none;
 }
 .sidebar ul li a:hover {
   text-decoration: underline;
 }
+
+/* Footer Styles */
 .footer {
-  background-color: #343a40;
-  color: white;
+  background-color: var(--color-footer-bg);
+  color: var(--color-white);
   text-align: center;
   padding: 20px;
   margin-top: 40px;
