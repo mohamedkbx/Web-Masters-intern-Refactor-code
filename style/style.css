@@ -127,3 +127,12 @@ body {
 .footer p {
   margin: 0;
 }
+
+footer form {
+  max-width: 500px;
+  margin: 0 auto 20px;
+}
+
+footer form .form-label {
+  color: #ddd;
+}
