@@ -17,11 +17,7 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/refactor-code.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-
+   git clone https://github.com/mohamedkbx/refactor-code.git
    ```
 
 To run the project, use a live server. If you have Visual Studio Code, you can use the Live Server extension:
