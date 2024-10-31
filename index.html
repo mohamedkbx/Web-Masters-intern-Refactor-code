@@ -11,103 +11,139 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header class="header" role="banner">
-      <h1>My Advanced Blog</h1>
-      <nav aria-label="Primary Navigation" class="nav-links" role="navigation">
-        <a href="#" aria-current="page">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Portfolio</a>
-      </nav>
+    <!-- Header with Navbar -->
+    <header class="bg-primary text-white py-4">
+      <div class="container">
+        <h1 class="text-center mb-3">My Advanced Blog</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
 
-    <main class="container mt-5" role="main">
+    <!-- Main Content -->
+    <main class="container my-5">
       <div class="row">
-        <section class="col-md-8" aria-labelledby="main-articles">
-          <h2 id="main-articles" class="visually-hidden">Blog Articles</h2>
+        <!-- Blog Articles Section -->
+        <section class="col-md-8">
+          <h2 class="visually-hidden">Blog Articles</h2>
 
-          <!-- Blog Article 1 -->
-          <article class="post" aria-labelledby="article-title-1">
-            <h3 id="article-title-1">First Advanced Article Title</h3>
-            <p>
-              This is some sample text for the first article. The full content of the article could
-              be displayed here. Feel free to add more content and style it as needed.
-            </p>
-            <button
-              class="btn btn-primary"
-              aria-label="Read more about First Advanced Article Title"
-            >
-              Read More
-            </button>
-          </article>
+          <!-- Blog Articles using Card component -->
+          <div class="card mb-4" aria-labelledby="article-title-1">
+            <div class="card-body">
+              <h3 id="article-title-1" class="card-title">First Advanced Article Title</h3>
+              <p class="card-text">
+                This is some sample text for the first article. The full content of the article
+                could be displayed here. Feel free to add more content and style it as needed.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                aria-label="Read more about First Advanced Article Title"
+                >Read More</a
+              >
+            </div>
+          </div>
 
-          <!-- Blog Article 2 -->
-          <article class="post" aria-labelledby="article-title-2">
-            <h3 id="article-title-2">Second Advanced Article Title</h3>
-            <p>
-              This is some sample text for the second article. The full content of the article could
-              be displayed here. Experiment with different layouts and design enhancements.
-            </p>
-            <button
-              class="btn btn-primary"
-              aria-label="Read more about Second Advanced Article Title"
-            >
-              Read More
-            </button>
-          </article>
+          <div class="card mb-4" aria-labelledby="article-title-2">
+            <div class="card-body">
+              <h3 id="article-title-2" class="card-title">Second Advanced Article Title</h3>
+              <p class="card-text">
+                This is some sample text for the second article. Experiment with different layouts
+                and design enhancements.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                aria-label="Read more about Second Advanced Article Title"
+                >Read More</a
+              >
+            </div>
+          </div>
 
-          <!-- Blog Article 3 -->
-          <article class="post" aria-labelledby="article-title-3">
-            <h3 id="article-title-3">Third Advanced Article Title</h3>
-            <p>
-              This is some sample text for the third article. Challenge yourself to add more
-              features and make the blog more interactive and user-friendly.
-            </p>
-            <button
-              class="btn btn-primary"
-              aria-label="Read more about Third Advanced Article Title"
-            >
-              Read More
-            </button>
-          </article>
+          <div class="card mb-4" aria-labelledby="article-title-3">
+            <div class="card-body">
+              <h3 id="article-title-3" class="card-title">Third Advanced Article Title</h3>
+              <p class="card-text">
+                This is some sample text for the third article. Challenge yourself to add more
+                features and make the blog more interactive.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary"
+                aria-label="Read more about Third Advanced Article Title"
+                >Read More</a
+              >
+            </div>
+          </div>
         </section>
 
-        <aside class="col-md-4" aria-label="Sidebar with additional content">
+        <!-- Sidebar Section -->
+        <aside class="col-md-4">
           <!-- About Blog Section -->
-          <div class="sidebar" aria-labelledby="about-blog">
-            <h3 id="about-blog">About the Blog</h3>
-            <p>
-              This blog is more advanced, requiring enhancements and restructuring. Consider adding
-              more sections and making it dynamic with JavaScript.
-            </p>
+          <div class="card mb-4" aria-labelledby="about-blog">
+            <div class="card-body">
+              <h3 id="about-blog" class="card-title">About the Blog</h3>
+              <p class="card-text">
+                This blog is more advanced, requiring enhancements and restructuring. Consider
+                adding more sections and making it dynamic.
+              </p>
+            </div>
           </div>
 
           <!-- Useful Links Section -->
-          <div class="sidebar" aria-labelledby="useful-links">
-            <h3 id="useful-links">Useful Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About the Author</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Portfolio</a></li>
-            </ul>
+          <div class="card mb-4" aria-labelledby="useful-links">
+            <div class="card-body">
+              <h3 id="useful-links" class="card-title">Useful Links</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About the Author</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+              </ul>
+            </div>
           </div>
 
           <!-- Recent Posts Section -->
-          <div class="sidebar" aria-labelledby="recent-posts">
-            <h3 id="recent-posts">Recent Posts</h3>
-            <ul>
-              <li><a href="#">How to Improve Your Blog</a></li>
-              <li><a href="#">Understanding CSS Grid</a></li>
-              <li><a href="#">10 JavaScript Tips and Tricks</a></li>
-            </ul>
+          <div class="card mb-4" aria-labelledby="recent-posts">
+            <div class="card-body">
+              <h3 id="recent-posts" class="card-title">Recent Posts</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">How to Improve Your Blog</a></li>
+                <li><a href="#">Understanding CSS Grid</a></li>
+                <li><a href="#">10 JavaScript Tips and Tricks</a></li>
+              </ul>
+            </div>
           </div>
         </aside>
       </div>
     </main>
 
-    <footer class="footer" role="contentinfo">
-      <p>All Rights Reserved © 2024 | Designed by Mohamed Khaled</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3" role="contentinfo">
+      <p class="mb-0">All Rights Reserved © 2024 | Designed by Mohamed Khaled</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
